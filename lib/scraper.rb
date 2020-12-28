@@ -14,10 +14,15 @@ require 'byebug'
 #   end
 
 #   def get_name
-#     @parsed_page.css("div.p-wrap")
+#    parsed_page.css("a.title").map do |name|
+#       name.text[0..25]
+#     end
 #   end
 
 #   def get_review
+#     @parsed_page.css("a.review").map do |review|
+#        review.text.gsub(/[A-Za-z]/,"").to_i
+#      end
 #   end
 
 #   def get_price
@@ -34,12 +39,16 @@ require 'byebug'
     unparsed_page = URI.open(url)
     parsed_page = Nokogiri::HTML(unparsed_page)
     
-    get_name =  parsed_page.css("div.p-wrap")
-    get_review = parsed_page.css("a.review")
-    get_price = parsed_page.css("span.price").map do |price| 
-      price.text.gsub(/[A-Za-z]/,"").gsub(".00","")
+    get_name =  parsed_page.css("a.title").map do |name|
+      name.text[0..25]
     end
-    # get_price_dollar = get_price.text.gsub(/[A-Za-z]/,"")
+    get_review = parsed_page.css("a.review").map do |review|
+      review.text.gsub(/[A-Za-z]/,"").to_i
+    end
+    get_price = parsed_page.css("span.price").map do |price| 
+      price.text.gsub(/[A-Za-z,]/,"").gsub(".00","")
+    end
+    
     byebug
   end
 
