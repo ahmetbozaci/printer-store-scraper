@@ -1,43 +1,4 @@
-require 'nokogiri'
-# require 'httparty'
-require 'open-uri'
-require 'byebug'
 
-class Scraper
-  attr_accessor :parsed_page
-
-  def initialize
-    url = "https://www.monster.com/jobs/search/Full-Time_8?q=Software-Engineer&intcid=skr_navigation_nhpso_searchMain&tm=14&stpage=1&"
-    unparsed_page = URI.open(url)
-    @parsed_page = Nokogiri::HTML(unparsed_page)
-  end
-
-  def jobs_list
-    @parsed_page.css("div.summary")
-  end
-  
-  def total_job
-    @parsed_page.css("h2.figure").text
-  end
-  
-  def method
-    jobs = Array.new
-    jobs_list.each do |job|
-      x = {
-        title: job.css("h2.title").text,
-        company: job.css("div.company").css("span.name").text,
-        location: job.css("div.location").css("span.name").text
-      }
-      y = Hash.new
-      x.map{|key,value| y[key] = value.strip}
-      jobs.push(y)
-      
-    end
-    jobs
-  end
-  byebug
-end
- 
 
 
 # def scraper_method
