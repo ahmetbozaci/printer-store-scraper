@@ -1,7 +1,7 @@
 [![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Ahmet-Click%20to%20Contact-brightgreen)](mailto:ahmt9417@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/ahmtbozaci?label=Follow%20Ahmet%20on%20Twitter&style=social)](https://twitter.com/ahmtbozaci)
 
 # Web Scraper
-I created FDM 3Dprinter store scraper in this project.
+I created scraper for "FDM 3Dprinter store" in this project.
 This project show printer name, price and review.
 You can sort them by price or review.
 
