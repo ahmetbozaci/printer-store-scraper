@@ -7,7 +7,7 @@ class Scrapper
 
   def initialize
     url = 'https://usa.banggood.com/Wholesale-Attribute-3D-Printer-c-10808-s-5347v13658.html'
-    unparsed_page = URI.open(url)
+    unparsed_page = URI.parse(url).open
     @parsed_page = Nokogiri::HTML(unparsed_page)
   end
 
