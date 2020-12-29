@@ -5,7 +5,7 @@ I created FDM 3Dprinter store scraper in this project.
 This project show printer name, price and review.
 You can sort them by price or review.
 
-*For more information you can check this [website](https://usa.banggood.com/Wholesale-Attribute-3D-Printer-c-10808-s-5347v13658.html) 
+* For more information you can check this [website](https://usa.banggood.com/Wholesale-Attribute-3D-Printer-c-10808-s-5347v13658.html) 
 
 ### Screenshots
 <img src='./asset/screenshot.png'>
