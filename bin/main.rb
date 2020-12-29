@@ -1,5 +1,5 @@
 require 'nokogiri'
-require_relative '../lib/scraper.rb'
+require_relative '../lib/scraper'
 require 'byebug'
 
 def variables
@@ -8,8 +8,8 @@ def variables
   price = scraper.take_price
   review = scraper.take_review
   printer_list = []
-  name.count.times { |index| printer_list.push([]) }
-  name.count.times { |index| printer_list[index].push(name[index],price[index],review[index]) 
+  name.count.times { printer_list.push([]) }
+  name.count.times { |index| printer_list[index].push(name[index], price[index], review[index]) }
   printer_list
 end
 
@@ -24,6 +24,8 @@ def display
   print 'Your enter: '
 end
 
+display
+
 def show_printers
   puts
   puts '           PRINTER_NAME      |    PRICE | REVIEW'
@@ -35,13 +37,11 @@ def input
   puts 'Please wait...'
   numbers = [1, 2]
   variables
-  result = variable.sort_by{ |list| list[number] }
-  show1 = result.size.times do |i|
+  result = variables.sort_by { |list| list[number] }
+  show_result = result.size.times do |i|
     show_printers
     puts "#{i + 1} -- #{result[i]}"
   end
-  numbers.include?(number) ? ("#{show1}") : (puts "you entered wrong number")
+  numbers.include?(number) ? show_result : (puts 'you entered wrong number')
 end
-
-display
 input
