@@ -1,12 +1,12 @@
-def display
-  puts
-  puts 'This scraper show FDM printers from Bangood store'
-  puts
-  puts 'If you want to sort them by price Press "1"'
-  puts
-  puts 'If you want to sort them by review Press "2"'
-  puts
-  puts 'List will be automatically sort low  to high.'
-  puts
-  print 'Price or Review: '
+require_relative '../lib/scraper'
+def variables
+  scraper = Scrapper.new
+  name = scraper.take_name
+  price = scraper.take_price
+  review = scraper.take_review
+  url = scraper.take_url
+  printer_list = []
+  name.count.times { printer_list.push([]) }
+  name.count.times { |index| printer_list[index].push(name[index], price[index], review[index], url[index]) }
+  printer_list
 end
