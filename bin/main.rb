@@ -3,7 +3,6 @@ require_relative '../lib/scraper'
 require_relative '../lib/information'
 require 'byebug'
 
-
 def variables
   scraper = Scrapper.new
   name = scraper.take_name
