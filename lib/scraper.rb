@@ -28,4 +28,23 @@ class Scrapper
       price.text.gsub(/[A-Za-z,$,]/, '').to_f
     end
   end
+
+
+  def take_url
+    printer_url = parsed_page.css('div.p-wrap')
+    printer_url.map  do |url| 
+      url.css("a")[0].attributes["href"].value 
+    end
+  end
 end
+
+# def test
+#   url = 'https://usa.banggood.com/Wholesale-Attribute-3D-Printer-c-10808-s-5347v13658.html'
+#   unparsed_page = URI.parse(url).open
+#   parsed_page = Nokogiri::HTML(unparsed_page)
+#   printer_url = parsed_page.css('div.p-wrap').map
+#   # printer_url.map do |url| url end
+#   byebug
+# end
+
+# test
