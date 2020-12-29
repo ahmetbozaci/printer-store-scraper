@@ -29,11 +29,10 @@ class Scrapper
     end
   end
 
-
   def take_url
     printer_url = parsed_page.css('div.p-wrap')
-    printer_url.map  do |url| 
-      url.css("a")[0].attributes["href"].value 
+    printer_url.map do |url|
+      url.css('a')[0].attributes['href'].value
     end
   end
 end
