@@ -21,23 +21,30 @@ def display
   puts
   puts 'If you want to sort them by review Press "2"'
   puts
-  print 'Your enter: '
+  puts 'List will be automatically sort low  to high.'
+  puts
+  print 'Price or Review: '
 end
 
 display
 
 def show_printers
   puts
-  puts '           PRINTER_NAME      |    PRICE | REVIEW'
+  puts '           PRINTER_NAME      |    PRICE($) | REVIEW'
   puts '   --------------------------------------------'
 end
 
 def input
   number = gets.chomp.to_i
+  puts
+  print 'Sort the list high to low? (Y/N): '
+  letter = gets.chomp.upcase
+  puts
   puts 'Please wait...'
   numbers = [1, 2]
   variables
   result = variables.sort_by { |list| list[number] }
+  result.reverse! if letter == 'Y'
   show_result = result.size.times do |i|
     show_printers
     puts "#{i + 1} -- #{result[i]}"

@@ -12,19 +12,19 @@ class Scrapper
   end
 
   def take_name
-    @parsed_page.css('a.title').map do |name|
+    parsed_page.css('a.title').map do |name|
       name.text[0..25]
     end
   end
 
   def take_review
-    @parsed_page.css('a.review').map do |review|
+    parsed_page.css('a.review').map do |review|
       review.text.gsub(/[A-Za-z]/, '').to_i
     end
   end
 
   def take_price
-    @parsed_page.css('span.price').map do |price|
+    parsed_page.css('span.price').map do |price|
       price.text.gsub(/[A-Za-z,$,]/, '').to_f
     end
   end
