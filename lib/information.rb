@@ -10,9 +10,3 @@ def display
   puts
   print 'Price or Review: '
 end
-
-def text
-  puts
-  puts '           PRINTER_NAME      |    PRICE($) | REVIEW'
-  puts '   --------------------------------------------'
-end
