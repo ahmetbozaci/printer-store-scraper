@@ -1,6 +1,5 @@
 require 'nokogiri'
 require 'open-uri'
-require 'byebug'
 
 class Scrapper
   attr_accessor :parsed_page
