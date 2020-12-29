@@ -1,6 +1,8 @@
 require 'nokogiri'
 require_relative '../lib/scraper'
+require_relative '../lib/information'
 require 'byebug'
+
 
 def variables
   scraper = Scrapper.new
@@ -11,27 +13,6 @@ def variables
   name.count.times { printer_list.push([]) }
   name.count.times { |index| printer_list[index].push(name[index], price[index], review[index]) }
   printer_list
-end
-
-def display
-  puts
-  puts 'This scraper show FDM printers from Bangood store'
-  puts
-  puts 'If you want to sort them by price Press "1"'
-  puts
-  puts 'If you want to sort them by review Press "2"'
-  puts
-  puts 'List will be automatically sort low  to high.'
-  puts
-  print 'Price or Review: '
-end
-
-display
-
-def show_printers
-  puts
-  puts '           PRINTER_NAME      |    PRICE($) | REVIEW'
-  puts '   --------------------------------------------'
 end
 
 def input
@@ -46,9 +27,10 @@ def input
   result = variables.sort_by { |list| list[number] }
   result.reverse! if letter == 'Y'
   show_result = result.size.times do |i|
-    show_printers
+    text
     puts "#{i + 1} -- #{result[i]}"
   end
   numbers.include?(number) ? show_result : (puts 'you entered wrong number')
 end
+display
 input
