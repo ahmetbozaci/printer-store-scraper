@@ -1,18 +1,13 @@
 [![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Ahmet-Click%20to%20Contact-brightgreen)](mailto:ahmt9417@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/ahmtbozaci?label=Follow%20Ahmet%20on%20Twitter&style=social)](https://twitter.com/ahmtbozaci)
 
 # Web Scraper
-
-
+I created FDM 3Dprinter store scraper in this project.
+This project show printer name, price and review.
+You can sort them by price or review.
 
 ### Screenshots
 <img src='./screenshot.png'>
 
-
-## Live Code
-[![Run on Repl.it](https://repl.it/badge/github/acushlakoncept/Enumerable)](https://repl.it/github/ahmetbozaci/Enumerable_Methods)
-
-### How_to_use
-![screenshot](/asset/read.png)
 
 ### Prerequisites
 
@@ -29,7 +24,7 @@ Step 1: Clone the repository
 Step 2: Move into the project directory
 
 ```
-'cd web_scraper'
+'cd printer_store_scraper'
 ```
 
 Step 3: Install necessary dependencies
