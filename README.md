@@ -5,6 +5,8 @@ I created FDM 3Dprinter store scraper in this project.
 This project show printer name, price and review.
 You can sort them by price or review.
 
+*For more information you can check this [website](https://usa.banggood.com/Wholesale-Attribute-3D-Printer-c-10808-s-5347v13658.html) 
+
 ### Screenshots
 <img src='./asset/screenshot.png'>
 
@@ -66,7 +68,7 @@ Step 4: Run the app
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ahmetbozaci/Enumerable_Methods/issues)
+Feel free to check the [issues page](https://github.com/ahmetbozaci/printer-store-scraper/issues)
 
 ## 📝 License
 
