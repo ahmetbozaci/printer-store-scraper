@@ -6,7 +6,7 @@ This project show printer name, price and review.
 You can sort them by price or review.
 
 ### Screenshots
-<img src='./screenshot.png'>
+<img src='../asset/screenshot.png'>
 
 
 ### Prerequisites
