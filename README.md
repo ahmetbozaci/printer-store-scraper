@@ -70,7 +70,7 @@ Feel free to check the [issues page](../../issues)
 
 ## 📝 License
 
-This project is [MIT](./LICENCE.md) licensed.
+This project is [MIT](LICENCE) licensed.
 
 ### Credits
 The project is part of Microverse Technical curriculum - Ruby section
