@@ -2,8 +2,7 @@
 
 ## Web Scraper
 I created scraper for "FDM 3DPrinter Store" in this project.
-This project show printer name, price and review from this [website](https://usa.banggood.com/Wholesale-Attribute-3D-Printer-c-10808-s-5347v13658.html)  
-You can sort them by price or review.
+This project show printer name, price and review from this [website](https://usa.banggood.com/Wholesale-Attribute-3D-Printer-c-10808-s-5347v13658.html). You can sort them by price or review.
 
 
 ### Screenshots
