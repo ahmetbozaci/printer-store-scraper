@@ -1,11 +1,10 @@
 [![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Ahmet-Click%20to%20Contact-brightgreen)](mailto:ahmt9417@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/ahmtbozaci?label=Follow%20Ahmet%20on%20Twitter&style=social)](https://twitter.com/ahmtbozaci)
 
-# Web Scraper
+## Web Scraper
 I created scraper for "FDM 3DPrinter Store" in this project.
-This project show printer name, price and review.
+This project show printer name, price and review from this [website](https://usa.banggood.com/Wholesale-Attribute-3D-Printer-c-10808-s-5347v13658.html)  
 You can sort them by price or review.
 
-* For more information you can check this [website](https://usa.banggood.com/Wholesale-Attribute-3D-Printer-c-10808-s-5347v13658.html) 
 
 ### Screenshots
 <img src='./asset/screenshot.png'>
@@ -58,21 +57,20 @@ Step 4: Run the app
 ## Author
 
 👤 **Ahmet Bozacı**
-- Github:[@ahmtbozaci](https://github.com/ahmetbozaci)
-- Twitter:[@ahmtbozaci](https://twitter.com/ahmtbozaci)
-- LinkedIn:[@ahmtbozaci](https://www.linkedin.com/in/ahmetbozaci/)
-
+- Github:[ahmtbozaci](https://github.com/ahmetbozaci)
+- Twitter:[ahmtbozaci](https://twitter.com/ahmtbozaci)
+- LinkedIn:[ahmtbozaci](https://www.linkedin.com/in/ahmetbozaci/)
 
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ahmetbozaci/printer-store-scraper/issues)
+Feel free to check the [issues page](../../issues)
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](./LICENCE.md) licensed.
 
 ### Credits
 The project is part of Microverse Technical curriculum - Ruby section
